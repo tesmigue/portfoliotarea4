@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--importamos links y meta tags-->
+    <meta charset="UTF-8"><!-- nos permite añadir mas informacion a nuestro html -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- viewport sirve para movlies, funcionara para hacer scroll, etc... -->
+        
+    <link rel="stylesheet" href="style.css" type= "text/css">
+    
+        <!--fonts-->
+    <title>Grupo 3</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <main>
+        <header class="header">
+            <p class="logo">Miguel Testor</p>
+
+            <div class="bx bx-menu" id="menu-icon"></div> 
+            
+
+            <nav class="navbar">
+                <a href="#Inicio" class="active">Inicio</a>
+                <a href="#Sobre mi">Sobre mi</a>
+                <a href="#Habilidades">Habilidades</a>
+                <a href="#Calculadora">Calculadora</a>
+                <a href="#Contacto">Contacto</a>
+                
+            </nav>
+        </header>
+
+        <section class="home" id="Inicio">
+            <div class="home-content">
+                <h1>Miguel Testor</h1>
+                <div class="texto-animado">
+                    <h3>Front-end Developer</h3>
+                </div>
+                <p>Hola!, soy Miguel Testor y soy un Front end developer. Comence este camino en enero de 2023 tras realizar el curso "the complete web developer course: Zero to Mastery" y tras aprender habilidades como html, css, javascript, bootstrap, react, nodejs, postresql y ssh esoy listo para realizar proyectos, comenzando por armar mi portafolio responsivo, ante cualquier duda, no dudes en contactarme! </p>
+                <div class="btn-box">
+                    <a href="#Contacto" class="btn">Contacto</a>
+                </div>
+            </div>
+            <div class="home-iconos">
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>
+        </section>
+        <!--Sobre mi 1, general-->
+        <section class="sobre-mi" id="Sobre mi">
+            <div class="sb-img">
+                <img src="yo.jpg" >
+            </div>       
+            <div class="sobre-content">
+                <h2>Soy un<span> Front End Developer</span><br> </h2>
+                <div class="gustos">
+                    <p>
+                        me gusta mucho el deporte, realizo 2 tipos de deportes de combate: muay thai y boxeo. Dentro de mis otros gustos esta la guitarra, el ajedrez y los videojuegos. Para este ultimo me fascinan los fps , aunque ultimamente los he estado reemplazando con la programacion.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--sobre mi 2, Galeria de fotos de mis pasatiempos-->
+        <section>
+            <div class="sobre-midos">
+                <div class="row">
+                    <div class="column">
+                      <img src="boxeo.jpeg" alt="boxeo" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="chess.jpeg" alt="Ajedrez" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="muay.jpeg" alt="Muay thai" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="guitarra.jpeg" alt="guitarra" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="juegos.jpeg" alt="juegos" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="pesas.jpeg" alt="pesas" onclick="myFunction(this);">
+                    </div>
+                  </div>
+                  
+                  <!-- container imagen -->
+                  <div class="container">
+                    <!-- cerrar imagen -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                  
+                    <!-- imagen expandida -->
+                    <img id="expandedImg" style="width: 30%;">
+                  
+                    <!-- texto -->
+                    <div id="imgtext"></div>
+                  </div>
+            </div>
+        </section>
+        <!--sobre mi 3, habilidades de programacion-->
+        <section class="Habilidades" id="Habilidades">
+            <h2 class="heading">Mis <span>Habilidades</span></h2>
+            <div class="habilidades-row">
+                <div class="habilidades-column">
+                    <h3 class="title">nivel de programacion</h3>
+
+                    <div class="habilidades-box">
+                        <div class="habilidades-content">
+                            <div class="progreso">
+                                <h3>HTML <span>75%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                            <div class="progreso">
+                                <h3>css <span>80%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                            <div class="progreso">
+                                <h3>javascript <span>60%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                            <div class="progreso">
+                                <h3>Python <span>40%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                            <div class="progreso">
+                                <h3>Mysql <span>60%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                            <div class="progreso">
+                                <h3>Bootstrap <span>20%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                            <div class="progreso">
+                                <h3>Excel <span>60%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                            <div class="progreso">
+                                <h3>NodeJS <span>20%</span></h3>
+                                <div class="barra"><span></span></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- calculadora -->
+        <section class="calculadoraonetwo" id="Calculadora">
+            <div class="calculadoraonetwo-row">
+                <div class="calculadoraonetwo-column">
+                    <h2 class="title">Calculadora de Diferencia de Edad</h2>
+
+                    <div class="calculadoraonetwo-box">
+                        <div class="calculadoraonetwo-content">
+                            <div class="center-form">
+                                <form id="edadForm">
+                                    <label for="tuEdad">Tu Edad:</label>
+                                    <input type="number" id="tuEdad" required>
+                                    <div class="btn-box">
+                                        <button type="submit" class="btn">Calcular</button>
+                                    </div>
+                                </form>
+                                <p id="resultadoEdad"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculadoraonetwo-column">
+                    <h2 class="title">Calculadora de costo total</h2>
+
+                    <div class="calculadoraonetwo-box">
+                        <div class="calculadoraonetwo-content">
+                            <div class="calculatoronetwo">
+                                <h3>Calculadora de Costo Total</h3>
+                                <form id="costoForm">
+                                <label for="precioUnitario">Precio Unitario:</label>
+                                <input type="number" id="precioUnitario" required>
+                                <label for="cantidad">Cantidad:</label>
+                                <input type="number" id="cantidad" required>
+                                <div class="btn-box">
+                                    <button type="submit" class="btn">Calcular</button>
+                                </div>
+                                </form>
+                                <p id="resultadoCosto"></p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculadorasimple">
+            <div class="calculadoraonetwo-column">
+                <h2 class="title">Calculadora Simple</h2>
+        
+                <div class="calculadoraonetwo-box">
+                    <div class="calculadoraonetwo-content">
+                        <div class="center-form">
+                            <form id="calculadoraForm">
+                                <label for="numero1">Número 1:</label>
+                                <input type="number" id="numero1" required>
+                                <label for="operador">Operador:</label>
+                                <select name="operador" id="operador">
+                                    <option value="suma">+</option>
+                                    <option value="resta">-</option>
+                                    <option value="multiplicacion">*</option>
+                                    <option value="division">/</option>
+                                </select>
+                                <label for="numero2">Número 2:</label>
+                                <input type="number" id="numero2" required>
+                                <div class="btn-box">
+                                    <button type="submit" class="btn">Calcular</button>
+                                </div>
+                            </form>
+                            <p id="resultadoCalculadora"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="Contacto">
+            <div class="contacto">
+                <h2 class="titulo">Contacto<span> aqui</span></h2>
+
+                <form action="#" id="miFormulario">
+                    <div class="input-box">
+                        <div class="input-campo">
+                            <input type="text" placeholder="Nombre" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-campo">
+                            <input type="text" placeholder="Apellido" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <div class="input-campo">
+                            <input type="text" placeholder="Correo electronico" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-campo">
+                            <input type="text" placeholder="Asunto" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+
+                    <div class="area-texto">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <span class="focus"></span>
+
+                    </div>
+
+                    <div class="btn-box">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
